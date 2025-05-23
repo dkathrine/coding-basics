@@ -2,3 +2,8 @@ body{
     background-color: #212121;
     font-family: Arial, sans-serif;
 }
+
+h1{
+    color: #dadada;
+    text-align: center;
+}
