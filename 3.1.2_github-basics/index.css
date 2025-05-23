@@ -12,3 +12,10 @@ h3{
     color: #dadada;
     text-align: center;
 }
+
+p{
+    color: #dadada;
+    text-align: center;
+    border: 1px solid #dadada;
+    padding: 10px;
+}
