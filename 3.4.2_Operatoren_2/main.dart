@@ -13,7 +13,8 @@ void main() {
   int movieAgeRating = int.parse(stdin.readLineSync()!);
 
   /* using the stored user inputs, it checks if the person is allowed to watch the movie or not */
-  if (age >= movieAgeRating || hasParentalConsent) {
+  if (age >= movieAgeRating ||
+      hasParentalConsent && age >= (movieAgeRating - 2)) {
     print("you are allowed to watch the movie.");
   } else {
     print("you are not allowed to watch the movie.");
