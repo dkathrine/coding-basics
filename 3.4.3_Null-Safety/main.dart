@@ -13,19 +13,21 @@ void main() {
   /* List<double?> temps = [];
 
   weatherData.forEach((data) {
-    temps.add(data['temp'] ?? 0);
+    if (data['temp'] != null) {
+      temps.add(data['temp']);
+    }
   }); */
 
   /* 
   then we calculate the average temperature by iterating through the temps list using the reduce method, adding up all the values, and dividing by the length of the list.
 */
-  /* double? averageTemp =
+  /* double averageTemp =
       (temps.reduce((a, b) => (a ?? 0) + (b ?? 0)) ?? 0) / temps.length; */
 
   /* 
   I wrote down a second solution using a forEach loop to do the same as the .reduce method, since we didn't talk about .reduce in the course yet (I somehow thought we already did talk about loops tho)
 */
-  /*   double sum = 0;
+  /* double sum = 0;
 
   temps.forEach((temp) {
     if (temp != null) {
@@ -38,7 +40,7 @@ void main() {
   /* 
   anyway, I then printed the average temperature to the console
 */
-  /*   print('Durchschnittstemperatur: ${averageTemp.toStringAsFixed(2)}'); */
+  /* print('Durchschnittstemperatur: ${averageTemp.toStringAsFixed(2)}'); */
   /* -------------------------------------------------------------------------------- */
 
   /* removed ? to ensure the list of temps has no null-values */
