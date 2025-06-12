@@ -25,26 +25,26 @@ void main() {
   print("Bitte gib dein Geschlecht ein (male/female)");
   String? sex = stdin.readLineSync();
 
-  print("Bitte gib dein Alter ein (20-25/25-30/30-35)");
-  String? age = stdin.readLineSync();
+  print("Bitte gib dein Alter ein (20-35)");
+  int? age = int.parse(stdin.readLineSync() ?? "20");
 
   switch (sex) {
     case "male":
       switch (age) {
-        case "20-25":
+        case >= 20 && <= 25:
           print("Im Schnitt 181,4m");
-        case "25-30":
+        case >= 25 && <= 30:
           print("Im Schnitt 181,3m");
-        case "30-35":
+        case >= 30 && <= 35:
           print("Im Schnitt 180,4m");
       }
     case "female":
       switch (age) {
-        case "20-25":
+        case >= 20 && <= 25:
           print("Im Schnitt 167,5m");
-        case "25-30":
+        case >= 25 && <= 30:
           print("Im Schnitt 167,3m");
-        case "30-35":
+        case >= 30 && <= 35:
           print("Im Schnitt 167,2m");
       }
   }
