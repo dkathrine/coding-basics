@@ -20,6 +20,6 @@ void main() {
   for (int point in points) {
     avg += point;
   }
-  avg = avg /= points.length;
+  avg /= points.length;
   print('Der Durchschnitt der Punkte ist: ${avg.toStringAsFixed(3)}');
 }
