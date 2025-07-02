@@ -1,5 +1,6 @@
 /* 
-99% of the following code doesn't make sense and will not be implemented like this in any ways after learning about databases in dart all of this will be revisited and updated to make sense and use actual syntax
+99% of the following code doesn't make sense and will not be implemented like this in any ways. 
+After learning about databases in dart all of this will be revisited and updated to make sense and use correct syntax
 
 
 Aufgabe 1:
